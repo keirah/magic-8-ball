@@ -37,7 +37,7 @@ const base = {
         ],
       },
       {
-        test: /\.(eot|gif|svg|woff|woff2|ttf|jpg|jpeg)$/,
+        test: /\.(eot|gif|svg|woff|woff2|ttf|jpg|png|jpeg)$/,
         use: {
           loader: 'file-loader',
           options: {

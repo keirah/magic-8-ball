@@ -1,4 +1,4 @@
-# ReasonReact starter kit plus
+# Magic 8 Ball
 
 Run this project:
 
@@ -7,7 +7,4 @@ yarn install
 yarn start
 ```
 
-Trying to collect my go-to bits of config in one place.
-Check the package.json for what's included!
-This is by no means finished. And it's probably borked in many places! :fire: Use at own risk! :fire:
-(pull requests welcome)
+Rick has some important questions. Ask the Magic-8-Ball!

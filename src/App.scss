@@ -1,3 +1,6 @@
+body {
+  background-color: rgba(243, 136, 136, 0.03);
+}
 .app {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
@@ -7,10 +10,39 @@
 .appContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
 }
 
-.appHeader {
-  text-align: center;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoContainer {
+  justify-content: space-around;
 }
 
 .appButton {
@@ -21,6 +53,142 @@
   text-decoration: none;
   cursor: pointer;
   &:hover {
-    background-color: rgba(217, 78, 68, 0.863);
+    background-color: rgba(217, 78, 68, 0.904);
   }
+}
+
+.noData {
+  position: relative;
+  top: 80px;
+  border-radius: 100px;
+  border: 10px solid black;
+  overflow: hidden;
+}
+
+.buttonWrapper {
+  align-self: center;
+  padding-top: 20px;
+}
+
+.buttonDetails {
+  align-self: center;
+  font-size: 2em;
+  position: absolute;
+  top: 160px;
+  right: 0;
+  transform: rotate(40deg);
+  padding: 20px;
+  background-color: blueviolet;
+  border: 2px solid #fdde63e1;
+  color: #fddd63;
+  border-radius: 18px;
+}
+
+.result {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultImageContainer {
+  background-image: url('./images/Magic_eight_ball_src3.png');
+  background-repeat: no-repeat;
+  background-size: 600px;
+  width: 600px;
+  height: 600px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.resultText {
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  font-size: 3em;
+  color: rgb(255, 254, 254);
+}
+
+.answerContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* This section has been taken from the great code pen https://codepen.io/zomgbre/pen/kmCsp */
+
+.things > .content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  transform: rotate(110deg);
+  right: 150px;
+  top: 0;
+  z-index: 0;
+}
+
+.things > .content h1 {
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  height: 150px;
+  color: rgb(217, 78, 68)b;
+}
+
+/* Arrow */
+
+.arrow {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.arrow .curve {
+  border: 4px solid rgb(217, 78, 68);
+  border-color: transparent transparent transparent rgb(217, 78, 68);
+  height: 360px;
+  width: 1200px;
+  border-radius: 230px 0 0 150px;
+}
+
+.arrow .point {
+  position: absolute;
+  left: 40px;
+  top: 315px;
+}
+
+.arrow .point:before,
+.arrow .point:after {
+  border: 2px solid rgb(217, 78, 68);
+  height: 25px;
+  content: '';
+  position: absolute;
+}
+
+.arrow .point:before {
+  top: -11px;
+  left: -11px;
+  transform: rotate(-74deg);
+  -webkit-transform: rotate(-74deg);
+  -moz-transform: rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+  left: 5px;
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
 }
